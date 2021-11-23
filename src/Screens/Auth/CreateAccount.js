@@ -37,7 +37,7 @@ export default function CreateAccount({ route, navigation }) {
 
 			<TextInput placeholder="Senha" secureTextEntry={true} value={password} onChangeText={password => setPassword(password)} style={styles.password}/>
 
-			<Button icon="login" style={styles.signIn} color="#1E0253" onPress={signInFunction}>
+			<Button icon="login" style={styles.signIn} color="#007FFF" onPress={signInFunction}>
 				Cadastrar-se
 			</Button>
 
@@ -47,7 +47,7 @@ export default function CreateAccount({ route, navigation }) {
 
 const styles = StyleSheet.create({
 	screen: { 
-		backgroundColor: '#1E0253',
+		backgroundColor: '#007FFF',
 		height: Dimensions.get('screen').height,
 		width: Dimensions.get('screen').width,
 		justifyContent: 'center',

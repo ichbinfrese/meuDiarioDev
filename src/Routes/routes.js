@@ -29,9 +29,9 @@ const theme = {
 	roundness: 5,
 	colors: {
 	  ...DefaultTheme.colors,
-	  background: '#1E0253',
-	  primary: '#1E0253',
-	  text: '#1E0253'
+	  background: '#007FFF',
+	  primary: '#007FFF',
+	  text: '#007FFF'
 	},
   };
 
@@ -40,7 +40,7 @@ export default function Routes() {
 		<Provider>
 			<StatusBar
 				animated={true}
-				backgroundColor="#1E0253"
+				backgroundColor="#007FFF"
 				barStyle={'light-content'}
 			/>
 			<NavigationContainer theme={theme}>
@@ -103,7 +103,7 @@ function Notes() {
 				name="ListNotes"
 				component={ListNotes}
 				options={{
-					title: "Minhas notas",
+					title: "Minhas Notas",
 					headerLeft: () => Logout(),
 				}}
 			/>
@@ -111,21 +111,21 @@ function Notes() {
 				name="CreateNote"
 				component={CreateNote}
 				options={{
-					title: "Criar nota",
+					title: "Criar Nota",
 				}}
 			/>
 			<Stack.Screen
 				name="ListIndividualNote"
 				component={ListIndividualNote}
 				options={{
-					title: "Visualizar nota",
+					title: "Visualizar Nota",
 				}}
 			/>
 			<Stack.Screen
 				name="EditNote"
 				component={EditNote}
 				options={{
-					title: "Editar nota",
+					title: "Editar Nota",
 				}}
 			/>
 		</Stack.Navigator>
@@ -145,7 +145,7 @@ function Memories() {
 				name="ListMemories"
 				component={ListMemories}
 				options={{
-					title: "Minhas memórias",
+					title: "Minhas Memórias",
 					headerLeft: () => Logout(),
 				}}
 			/>
@@ -153,21 +153,21 @@ function Memories() {
 				name="CreateMemory"
 				component={CreateMemory}
 				options={{
-					title: "Criar memória",
+					title: "Criar Memória",
 				}}
 			/>
 			<Stack.Screen
 				name="ListIndividualMemory"
 				component={ListIndividualMemory}
 				options={{
-					title: "Visualizar memória",
+					title: "Visualizar Memória",
 				}}
 			/>
 			<Stack.Screen
 				name="EditMemory"
 				component={EditMemory}
 				options={{
-					title: "Editar memória",
+					title: "Editar Memória",
 				}}
 			/>
 		</Stack.Navigator>
@@ -182,7 +182,7 @@ function Logout() {
 			icon="logout"
 			onPress={() => {
 				firebase.auth().signOut().then(() => {
-					navigation.goBack();
+					navigation.navigate("Welcome");
 				}).catch((error) => {
 					console.log(error)
 				});

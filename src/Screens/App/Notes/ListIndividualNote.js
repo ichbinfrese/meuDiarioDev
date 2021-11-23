@@ -103,6 +103,7 @@ export default function ListIndividualNote({ route, navigation }) {
                             Apagar
                         </Button>
                     </View>
+                    <View><Button color="#007FFF" mode='contained' onPress={() => navigation.goBack()}>Voltar</Button></View>
 
                 </ScrollView>
             </SafeAreaView>
@@ -112,7 +113,7 @@ export default function ListIndividualNote({ route, navigation }) {
 
 const styles = StyleSheet.create({
     screen: { 
-		backgroundColor: '#C8ABFF',
+		backgroundColor: '#03A89E',
 		height: Dimensions.get('screen').height,
 		width: Dimensions.get('screen').width,
 		justifyContent: 'flex-start',
@@ -141,7 +142,7 @@ const styles = StyleSheet.create({
     },
 
     title: {
-        color: '#1E0253',
+        color: '#007FFF',
         alignSelf: 'center',
         fontSize: 20,
         fontWeight: 'bold',
@@ -152,7 +153,7 @@ const styles = StyleSheet.create({
         marginTop: 10,
         alignSelf: 'center',
         padding: 5,
-        backgroundColor: '#1E0253',
+        backgroundColor: '#007FFF',
         borderRadius: 5,
         marginHorizontal: 5,
     },
@@ -167,7 +168,7 @@ const styles = StyleSheet.create({
     },
 
     button: {
-        backgroundColor: '#1E0253',
+        backgroundColor: '#007FFF',
         width: 0.4*Dimensions.get('screen').width,
     }
 

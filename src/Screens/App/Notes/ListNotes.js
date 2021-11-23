@@ -140,7 +140,7 @@ export default function ListNotes({ route, navigation }) {
 
 const styles = StyleSheet.create({
     screen: { 
-		backgroundColor: '#C8ABFF',
+		backgroundColor: '#03A89E',
 		height: Dimensions.get('screen').height,
 		width: Dimensions.get('screen').width,
 		justifyContent: 'flex-start',
@@ -158,7 +158,7 @@ const styles = StyleSheet.create({
         marginLeft: 0.04*Dimensions.get('screen').width,
         marginTop: 10,
         alignSelf: 'flex-start',
-        backgroundColor: '#1E0253',
+        backgroundColor: '#007FFF',
         color: 'white'
     },
 
@@ -170,7 +170,7 @@ const styles = StyleSheet.create({
         marginRight: 0.04*Dimensions.get('screen').width,
         marginTop: 10,
         alignSelf: 'flex-end',
-        backgroundColor: '#1E0253',
+        backgroundColor: '#007FFF',
         color: 'white',
         borderRadius: 5,
         padding: 12
@@ -198,7 +198,7 @@ const styles = StyleSheet.create({
     },
 
     fab: {
-        backgroundColor: '#1E0253',
+        backgroundColor: '#007FFF',
         position: 'absolute',
         margin: 16,
         right: 0,

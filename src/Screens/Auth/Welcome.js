@@ -48,7 +48,7 @@ export default function Welcome({ navigation }) {
 
             <TextInput placeholder="E-mail" value={email} onChangeText={email => setEmail(email)} style={styles.email}/>
             
-            <Button icon="login" style={styles.continue} color="#1E0253" onPress={continueFunction}>
+            <Button icon="login" style={styles.continue} color="#007FFF" onPress={continueFunction}>
                 Continuar
             </Button>
 
@@ -58,7 +58,7 @@ export default function Welcome({ navigation }) {
 
 const styles = StyleSheet.create({
     screen: {
-        backgroundColor: '#1E0253',
+        backgroundColor: '#007FFF',
         height: Dimensions.get('screen').height,
         width: Dimensions.get('screen').width,
         justifyContent: 'center',

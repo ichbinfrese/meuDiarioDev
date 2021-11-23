@@ -30,7 +30,7 @@ export default function Login({ route, navigation }) {
 
             <TextInput placeholder="Senha" secureTextEntry={true} value={password} onChangeText={password => setPassword(password)} style={styles.password}/>
             
-            <Button icon="login" style={styles.login} color="#1E0253" onPress={loginFunction}>
+            <Button icon="login" style={styles.login} color="#007FFF" onPress={loginFunction}>
                 Entrar
             </Button>
 
@@ -40,7 +40,7 @@ export default function Login({ route, navigation }) {
 
 const styles = StyleSheet.create({
     screen: {
-        backgroundColor: '#1E0253',
+        backgroundColor: '#007FFF',
         height: Dimensions.get('screen').height,
         width: Dimensions.get('screen').width,
         justifyContent: 'center',

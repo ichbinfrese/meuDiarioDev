@@ -192,7 +192,7 @@ export default function CreateMemory({ route, navigation }) {
 
 const styles = StyleSheet.create({
     screen: { 
-		backgroundColor: '#C8ABFF',
+		backgroundColor: '#03A89E',
 		height: Dimensions.get('screen').height,
 		width: Dimensions.get('screen').width,
 		justifyContent: 'flex-start',
@@ -239,7 +239,7 @@ const styles = StyleSheet.create({
     imageButton: {
         marginTop: 10,
         alignSelf: 'center',
-        backgroundColor: '#1E0253',
+        backgroundColor: '#007FFF',
         width: 0.92*Dimensions.get('screen').width,
         borderRadius: 5,
     },
@@ -253,7 +253,7 @@ const styles = StyleSheet.create({
     save: {
         alignSelf: 'center',
         marginTop: 50,
-        backgroundColor: '#1E0253',
+        backgroundColor: '#007FFF',
         width: 0.4*Dimensions.get('screen').width,
         borderRadius: 5,
         marginBottom: 50
