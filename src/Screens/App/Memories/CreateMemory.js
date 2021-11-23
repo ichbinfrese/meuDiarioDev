@@ -9,6 +9,7 @@ import { v4 as uuidV4 } from 'uuid';
 import firebase from 'firebase';
 import Fire from '../../../Components/Fire';
 
+
 export default function CreateMemory({ route, navigation }) {
 
     const { user } = route.params;
